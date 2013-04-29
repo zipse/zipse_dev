@@ -1,4 +1,5 @@
 <?php echo $this->element('head'); ?>
+
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">

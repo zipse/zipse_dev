@@ -1,0 +1,159 @@
+
+/* Large desktop */
+/* @media (min-width: 1200px) {  } */
+
+/* Portrait tablet to landscape and desktop */
+/* ************************************************************************************************************
+*
+*	MAIN DISPLAY AREA NUKKA
+*
+*************************************************************************************************************/
+@media (min-width: 481px) and (max-width: 1900px) 
+{ 
+
+a 
+{
+	text-decoration:none;
+}
+
+body
+{
+	background: url('/img/big-back.jpg') -200px -90px no-repeat;
+	min-height:1000px;
+}
+
+.container
+{
+	width: 950px;
+}
+
+.content
+{
+	background: none;
+	width:
+}
+
+.header
+{
+	margin: 50px 0 0 0;
+}
+
+
+/* side nav */
+
+.side-nav
+{
+	margin: 100px 0 0 100px;
+	float:left;
+}
+
+.side-nav li
+{
+	list-style: none;
+}
+
+.side-nav li span
+{
+	height: 50px;
+	width: 220px;
+
+}
+
+.side-nav .music-tab
+{
+	background: url('/img/menu/music-tab-dark-small.png') 0px 0px no-repeat;
+	float:left;
+}
+
+.side-nav .music-tab:hover
+{
+	background: url('/img/menu/music-tab-glow.png')  0px 0px no-repeat;
+}
+
+.side-nav .projects-tab
+{
+	background: url('/img/menu/projects-tab-dark.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .projects-tab:hover
+{
+	background: url('/img/menu/projects-tab-glow.png')  0px 0px no-repeat;
+}
+
+
+.side-nav .about-tab
+{
+	background: url('/img/menu/about-tab-dark.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .about-tab:hover
+{
+	background: url('/img/menu/about-tab-glow.png')  0px 0px no-repeat;
+}
+
+.side-back-nav
+{
+	margin: 200px 0 0 00px;
+	float:left;
+
+}
+
+.side-back-nav li
+{
+	list-style: none;
+}
+
+.side-back-nav li span
+{
+	height: 50px;
+	width: 220px;
+
+}
+.side-back-nav .music-tab
+{
+	background: url('/img/menu/music-tab-dark-small.png') 0px -10px no-repeat;
+	float:left;
+}
+
+.side-back-nav .music-tab:hover
+{
+	background: url('/img/menu/music-tab-glow-small.png')  0px -10px no-repeat;
+}
+
+
+
+} 
+/*****************************************************************************************************************
+*
+*
+*
+*
+*
+* end desktop and tablet view  
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*************************************************************************************************************/
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{ 
+body
+{
+	background: url('/img/small-back.jpg') 00px 0 no-repeat;
+	min-height:1000px;
+}
+
+}
+
+
