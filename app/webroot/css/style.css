@@ -30,7 +30,9 @@ body
 .content
 {
 	background: none;
-	width:
+	display:block;
+	height: auto;
+	background: #ccc;
 }
 
 .header

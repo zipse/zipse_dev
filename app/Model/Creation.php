@@ -3,8 +3,8 @@ App::uses('AppModel', 'Model');
 /**
  * Creation Model
  *
- * @property User $User
  * @property CreationType $CreationType
+ * @property User $User
  */
 class Creation extends AppModel {
 
@@ -51,6 +51,13 @@ class Creation extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
+		'CreationType' => array(
+			'className' => 'CreationType',
+			'foreignKey' => 'creation_type_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'User' => array(
 			'className' => 'User',
 			'foreignKey' => 'user_id',
@@ -59,26 +66,4 @@ class Creation extends AppModel {
 			'order' => ''
 		)
 	);
-
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'CreationType' => array(
-			'className' => 'CreationType',
-			'foreignKey' => 'id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }
