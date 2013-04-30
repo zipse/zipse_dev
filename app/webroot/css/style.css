@@ -30,8 +30,10 @@ body
 .content
 {
 	background: none;
-	display:block;
-	height: auto;
+}
+
+.index, .form, .view
+{
 	background: #ccc;
 }
 
