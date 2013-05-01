@@ -14,6 +14,7 @@
 		echo $this->Html->css('style');
 		
 		echo $this->Html->script('bootstrap');
+		echo $this->Html->script('app');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

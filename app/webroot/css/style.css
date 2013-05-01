@@ -8,7 +8,7 @@
 *	MAIN DISPLAY AREA NUKKA
 *
 *************************************************************************************************************/
-@media (min-width: 481px) and (max-width: 1900px) 
+@media (min-width: 481px) and (max-width: 2000px) 
 { 
 
 a 
@@ -18,13 +18,14 @@ a
 
 body
 {
-	background: url('/img/big-back.jpg') -200px -90px no-repeat;
-	min-height:1000px;
+	background: url('/img/big-back.jpg') -200px -90px repeat-x;
+	display:block;
 }
 
 .container
 {
 	width: 950px;
+	height:100%;
 }
 
 .content

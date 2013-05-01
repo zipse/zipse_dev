@@ -47,8 +47,9 @@ class CreationsController extends AppController {
 				$this->Session->setFlash(__('The creation could not be saved. Please, try again.'));
 			}
 		}
+		$creationTypes = $this->Creation->CreationType->find('list');
 		$users = $this->Creation->User->find('list');
-		$this->set(compact('users'));
+		$this->set(compact('creationTypes', 'users'));
 	}
 
 /**
@@ -73,8 +74,9 @@ class CreationsController extends AppController {
 		} else {
 			$this->request->data = $this->Creation->read(null, $id);
 		}
+		$creationTypes = $this->Creation->CreationType->find('list');
 		$users = $this->Creation->User->find('list');
-		$this->set(compact('users'));
+		$this->set(compact('creationTypes', 'users'));
 	}
 
 /**
@@ -141,8 +143,9 @@ class CreationsController extends AppController {
 				$this->Session->setFlash(__('The creation could not be saved. Please, try again.'));
 			}
 		}
+		$creationTypes = $this->Creation->CreationType->find('list');
 		$users = $this->Creation->User->find('list');
-		$this->set(compact('users'));
+		$this->set(compact('creationTypes', 'users'));
 	}
 
 /**
@@ -167,8 +170,9 @@ class CreationsController extends AppController {
 		} else {
 			$this->request->data = $this->Creation->read(null, $id);
 		}
+		$creationTypes = $this->Creation->CreationType->find('list');
 		$users = $this->Creation->User->find('list');
-		$this->set(compact('users'));
+		$this->set(compact('creationTypes', 'users'));
 	}
 
 /**
