@@ -21,17 +21,16 @@
 	?>
 </head>	
 <body>
-	<div class="side-nav">
-		<ul>
-			<li><a href="/about" ><span class="about-tab" id="about-tab"></span></a></li>
-			<li><a href="/projects" ><span class="projects-tab" id="projects-tab"></span></a></li>
-		</ul>
-	</div>
-	<div class="side-back-nav">
-		<ul>
-			<li><a href="/music"><span class="music-tab" id="music-tab"></span></a></li>
-		</ul>
-	</div>
+	<?php 
+	
+		echo $this->element('normal_sidenav');
+		
+		//if super admin then give more options
+		if ($logged_in && $user['role'] = -1)	echo $this->element('admin_sidenav');
+	
+	?>
+	
+	
 	<div class="container">
 		<div class="header">
 			<div style="text-align: right;">
