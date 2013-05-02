@@ -24,7 +24,7 @@
 <body>
 	<?php 
 	
-		echo $this->element('normal_sidenav');
+		//echo $this->element('normal_sidenav');
 		
 		//if super admin then give more options
 		if ($logged_in && $user['role'] = -1)	echo $this->element('admin_sidenav');

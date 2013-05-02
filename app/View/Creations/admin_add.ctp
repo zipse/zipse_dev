@@ -1,7 +1,7 @@
 <div class="creations form">
 <?php echo $this->Form->create('Creation'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Creation'); ?></legend>
+		<legend><?php echo __('Admin Add Creation'); ?></legend>
 	<?php
 		echo $this->Form->input('title');
 		echo $this->Form->input('content');

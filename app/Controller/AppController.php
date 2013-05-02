@@ -53,7 +53,7 @@ class AppController extends Controller {
     }
     
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view', 'login', 'display');
+        //$this->Auth->allow('index', 'view', 'login', 'display');
         $this->Auth->allow();
         $this->set('logged_in', $this->Auth->loggedIn());
         $this->set('user', $this->Auth->user());
