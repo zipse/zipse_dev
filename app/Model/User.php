@@ -97,4 +97,36 @@ class User extends AppModel {
 		//pr($this->data);die();
 		return true;
 	}
+    
+    
+    public $hasMany = array(
+        'Creation' => array(
+            'className'     => 'Creation',
+            'foreignKey'    => 'user_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
+        'Playlist' => array(
+            'className'     => 'Playlist',
+            'foreignKey'    => 'user_id',
+            'dependent' => true,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        )
+    );
+    
+    
 }
