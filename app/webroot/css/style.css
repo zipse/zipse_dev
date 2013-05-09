@@ -107,6 +107,18 @@ body
 	background: url('/img/menu/about-tab-glow.png')  0px 0px no-repeat;
 }
 
+.side-nav .creations-tab
+{
+	background: url('/img/menu/creations-before.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .creations-tab:hover
+{
+	background: url('/img/menu/creations-after.png')  0px 0px no-repeat;
+}
+
 .side-back-nav
 {
 	margin: 200px 0 0 00px;
