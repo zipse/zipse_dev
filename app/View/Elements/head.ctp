@@ -23,6 +23,8 @@
 </head>	
 <body>
 	<?php 
+        $c = new Configure();
+        echo $c->version();
 	   var_dump($this->params->params['pass']);
 		echo $this->element('normal_sidenav');
 		

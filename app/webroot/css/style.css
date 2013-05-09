@@ -13,6 +13,10 @@ h2, .paging
 	background: none;
 }
 
+h2
+{
+	color: #7bb9ff;
+}
 
 @media (min-width: 481px) and (max-width: 2000px) 
 { 
@@ -26,6 +30,12 @@ body
 {
 	background: url('/img/big-back.jpg') -200px -90px repeat-x;
 	display:block;
+	color: #f4f5f7;
+}
+
+label
+{
+	color: #f4f5f7;
 }
 
 .container
@@ -40,10 +50,29 @@ body
 	margin: 20px 0 0 0;
 }
 
-.index, .form, .view
+div.index, div.form, div.view, div.login
 {
 	background: #adadad;
+	width: 800px;
+	margin: 0 auto;
 }
+
+.clear-submit
+{
+	margin: 0 0.5em;
+}
+
+.clear-submit input, .clear-submit input:active
+{
+	background: none;
+	border: 0;
+	color: #f4f5f7;
+	width: 100%;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+
 
 .header
 {
@@ -51,12 +80,36 @@ body
 }
 
 
+
+/*
+ * 
+ * 	login
+ * 
+ */
+
+
+div.login
+{
+	width: 280px;
+	background: none;
+}
+
+.login label
+{
+	display: none;
+}
+
+.login .login-submit input
+{
+	width: 195px;
+}
+
 /* side nav */
 
 .side-nav
 {
 	margin: 100px 0 0 100px;
-	float:left;
+	position: absolute;
 }
 
 .side-nav li

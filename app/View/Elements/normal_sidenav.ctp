@@ -6,9 +6,9 @@
 			<li><a href="/users" ><span class="projects-tab" id="projects-tab"></span></a></li>
 		</ul>
 	</div>
-	<div class="side-back-nav">
+	<!-- <div class="side-back-nav">
 		<ul>
 			<li><a href="/music"><span class="music-tab" id="music-tab"></span></a></li>
 		</ul>
-	</div>
+	</div> -->
 </div>
