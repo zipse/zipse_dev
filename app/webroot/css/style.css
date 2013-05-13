@@ -15,7 +15,7 @@ h2, .paging
 
 h2
 {
-	color: #7bb9ff;
+	color: #222;
 }
 
 @media (min-width: 481px) and (max-width: 2000px) 
@@ -55,6 +55,7 @@ div.index, div.form, div.view, div.login
 	background: #adadad;
 	width: 800px;
 	margin: 0 auto;
+	float:none;
 }
 
 .clear-submit
@@ -214,6 +215,14 @@ div.login
 
 
 } 
+
+@media (max-width: 1520px)
+{
+	div.side-nav
+	{
+		margin-left: 20px
+	}
+}
 /*****************************************************************************************************************
 *
 *

@@ -36,12 +36,9 @@ class UsersController extends AppController {
  * @return void
  */
 	public function index() {
-		//$this->User->recursive = 0;
-		$this->User->Behaviors->attach('Containable');
-        $everyone = $this->User->find('all', array('contain' => 'Playlist'));
+		$this->User->recursive = 0;
         
 		$this->set('users', $this->paginate());
-        $this->set('everyone', $everyone);
 	}
 
 /**

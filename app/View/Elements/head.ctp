@@ -25,7 +25,7 @@
 	<?php 
         $c = new Configure();
         echo $c->version();
-	   var_dump($this->params->params['pass']);
+	   //var_dump($this->params->params['pass']);
 		echo $this->element('normal_sidenav');
 		
 		//if super admin then give more options

@@ -7,16 +7,19 @@ function moveBackground()
 	move = -475 + margin;
 	
 	$('body').css('background-position-x', move+'px');
+
+	return;
 }
 
 function inputSwap()
 {
-	if($('input').length == 0 ) return;
 	
-	$('input').each(function(){
+	if(this.value == this.defaultValue) 	this.value = '';
+	else if(this.value == '')				this.value = this.defaultValue;
+	
 		
-		console.log('wadap');
-	});
+			console.log('wadap');			
+
 }
 
 $(window).resize(function(){
@@ -33,7 +36,7 @@ $(document).ready(function (){
 	moveBackground();
 	
 	// for default value for inputs
-	
-	inputSwap();
+	$('input[type="text"]').focus( inputSwap ).blur( inputSwap );
+	$('input[type="password"]').focus( inputSwap ).blur( inputSwap );
 
 });
