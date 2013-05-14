@@ -11,11 +11,16 @@ function moveBackground()
 	return;
 }
 
+function toggleActions()
+{
+    
+}
+
 function inputSwap()
 {
 	
 	if(this.value == this.defaultValue) 	this.value = '';
-	else if(this.value == '')				this.value = this.defaultValue;
+	else if(this.value == '')		this.value = this.defaultValue;
 	
 		
 			console.log('wadap');			
@@ -30,10 +35,11 @@ $(window).resize(function(){
 
 $(document).ready(function (){
 
-	// menu items
-
-	
+	// keep background synced with layout
 	moveBackground();
+	
+	// side actions display
+	$('.actions-toggle').click(toggleActions());
 	
 	// for default value for inputs
 	$('input[type="text"]').focus( inputSwap ).blur( inputSwap );

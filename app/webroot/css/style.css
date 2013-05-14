@@ -3,9 +3,10 @@
 /* @media (min-width: 1200px) {  } */
 
 /* Portrait tablet to landscape and desktop */
+
 /* ************************************************************************************************************
 *
-*	MAIN DISPLAY AREA NUKKA
+*	MAIN DISPLAY AREA NUKKA GENERIC
 *
 *************************************************************************************************************/
 h2, .paging
@@ -38,6 +39,27 @@ label
 	color: #f4f5f7;
 }
 
+.clear-submit
+{
+	margin: 0 0.5em;
+}
+
+.clear-submit input, .clear-submit input:active
+{
+	background: none;
+	border: 0;
+	color: #f4f5f7;
+	width: 100%;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+/*
+*	
+*	main content layout
+*
+*/ 
+
 .container
 {
 	width: 950px;
@@ -58,20 +80,26 @@ div.index, div.form, div.view, div.login
 	float:none;
 }
 
-.clear-submit
+div.index .actions, div.form .actions, div.view .actions, div.login .actions
 {
-	margin: 0 0.5em;
+	position:relative;
 }
 
-.clear-submit input, .clear-submit input:active
-{
-	background: none;
-	border: 0;
-	color: #f4f5f7;
-	width: 100%;
-	box-shadow: none;
-	text-shadow: none;
-}
+
+
+/*
+*	
+*	forms
+*
+*/ 
+
+
+
+/*
+*	
+*	header
+*
+*/ 
 
 
 
@@ -79,6 +107,8 @@ div.index, div.form, div.view, div.login
 {
 	margin: 50px 0 0 0;
 }
+
+
 
 
 
@@ -105,7 +135,45 @@ div.login
 	width: 195px;
 }
 
-/* side nav */
+/* 
+*
+*
+*	side actions 
+*
+*
+*/
+
+.actions-toggle
+{
+    background: #ccc;
+    color: #000;
+    width: 50px;
+    padding: 10px 0;
+    position: fixed;
+    text-align:center;
+    border-radius: 5px;
+    top: 20px;
+    left: 0;
+    
+}
+
+.actions
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* 
+*
+*
+*	side nav 
+*
+*
+*/
 
 .side-nav
 {
