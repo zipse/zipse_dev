@@ -9,6 +9,7 @@
 		
 		echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
 		echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>';
+		echo '<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>';
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap');
 		echo $this->Html->css('style');
@@ -40,7 +41,8 @@
 		        <?php if ($logged_in): ?>
 		            Welcome <?php echo $user['user_name']; ?>. <?php echo $this->Html->link('Logout', array('controller'=>'users', 'action'=>'logout')); ?>
 		        <?php else: ?>
-		            <?php echo $this->Html->link('Login', array('controller'=>'users', 'action'=>'login')); ?>
+		            [ <?php echo $this->Html->link('Login', array('controller'=>'users', 'action'=>'login')); ?> ]
+		            <?php //echo $this->Html->link('Register', array('controller'=>'users', 'action'=>'add')); ?>
 		        <?php endif; ?>
 		    </div>
 		</div>
