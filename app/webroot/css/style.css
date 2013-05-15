@@ -174,7 +174,7 @@ div.login input
 
 .open
 {
-    left:300px;
+    left:283px;
     display: none;
 }
 
@@ -184,7 +184,7 @@ div.actions-slick
     position: fixed;
     top: 20px;
     left: 0;
-    width:243px;
+    width:240px;
     background: #ccc;
     opacity: 0.8;
     border-radius: 0 0 7px 0;

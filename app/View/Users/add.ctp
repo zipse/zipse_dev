@@ -15,7 +15,8 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
-<div class="actions">
+<div class="actions-toggle">+</div>
+<div class="actions actions-slick">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
