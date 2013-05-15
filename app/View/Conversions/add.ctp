@@ -3,13 +3,14 @@
 	<fieldset>
 		<legend><?php echo __('Add Conversion'); ?></legend>
 	<?php
-		echo $this->Form->input('user_id');
-		echo $this->Form->input('end_file');
+		echo $this->Form->input('user_id', array('type' => 'hidden', 'value' => $user['id']));
+		echo $this->Form->input('end_file', array('label' => 'File to Convert', 'type' => 'file'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
-<div class="actions">
+<div class="actions-toggle">+</div>
+<div class="actions actions-slick">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 

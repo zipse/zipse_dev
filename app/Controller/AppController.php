@@ -58,7 +58,7 @@ class AppController extends Controller {
         $this->Auth->allow();
         $this->set('logged_in', $this->Auth->loggedIn());
         $this->set('user', $this->Auth->user());
-		$this->layout = 'zipse';
+        $this->layout = 'zipse';
     }
 
 }

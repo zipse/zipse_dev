@@ -38,7 +38,9 @@ class ConversionsController extends AppController {
  * @return void
  */
 	public function add() {
+		phpinfo();
 		if ($this->request->is('post')) {
+			$name =$this->convert();
 			$this->Conversion->create();
 			if ($this->Conversion->save($this->request->data)) {
 				$this->Session->setFlash(__('The conversion has been saved'));
@@ -51,6 +53,21 @@ class ConversionsController extends AppController {
 		$this->set(compact('users'));
 	}
 
+/**
+ * convert method
+ *
+ * @return void
+ */
+	
+	    public function convert()
+	    {
+//		var_dump($this->request);
+		$name = '';
+		return $name;
+	    }
+	
+	
+	
 /**
  * edit method
  *
