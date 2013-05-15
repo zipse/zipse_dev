@@ -73,7 +73,8 @@ endforeach;
 	?>
 	</div>
 </div>
-<div class="actions">
+<div class="actions-toggle">+</div>
+<div class="actions actions-slick">
 	<h3><?php echo __d('cake', 'Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__d('cake', 'New %s', $singularHumanName), array('action' => 'add')); ?></li>

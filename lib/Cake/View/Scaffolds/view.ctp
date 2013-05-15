@@ -186,7 +186,8 @@ $otherSingularVar = Inflector::variable($_alias);
 ?>
 	</table>
 <?php endif; ?>
-	<div class="actions">
+	<div class="actions-toggle">+</div>
+	<div class="actions actions-slick">
 		<ul>
 			<li><?php echo $this->Html->link(
 				__d('cake', "New %s", Inflector::humanize(Inflector::underscore($_alias))),

@@ -23,7 +23,8 @@
 	echo $this->Form->end(__d('cake', 'Submit'));
 ?>
 </div>
-<div class="actions">
+<div class="actions-toggle">+</div>
+<div class="actions actions-slick">
 	<h3><?php echo __d('cake', 'Actions'); ?></h3>
 	<ul>
 <?php if ($this->request->action != 'add'): ?>
