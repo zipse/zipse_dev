@@ -38,7 +38,8 @@
 	?>
 	</div>
 </div>
-<div class="actions">
+<div class="actions-toggle">+</div>
+<div class="actions actions-slick">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Conversion'), array('action' => 'add')); ?></li>

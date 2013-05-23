@@ -30,6 +30,23 @@ class UsersController extends AppController {
 	}
 
 
+	
+	public function confirm()
+	{
+	    // check if they've made directories yet
+	    $dir = APP.WEBROOT_DIR.'/files/'. $uid.'/';
+	    
+	    if(!is_dir($dir))	mkdir($dir);
+	    if(!is_dir($dir))
+	    {
+		$this->Session->setFlash('That directory does not exist');
+		$this->redirect($this->request->here);
+	    }
+	    
+	    $this->redirect('/');
+	}
+	
+	
 /**
  * index method
  *
