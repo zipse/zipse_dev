@@ -1,0 +1,422 @@
+
+/* Large desktop */
+/* @media (min-width: 1200px) {  } */
+
+/* Portrait tablet to landscape and desktop */
+
+/* ************************************************************************************************************
+*
+*	MAIN DISPLAY AREA NUKKA GENERIC
+*
+*************************************************************************************************************/
+
+body
+{
+    position: relative;
+}
+
+h2, .paging
+{
+	background: none;
+}
+
+h2
+{
+	color: #222;
+}
+
+@media (min-width: 481px) and (max-width: 2000px) 
+{ 
+
+a 
+{
+	text-decoration:none;
+}
+
+body
+{
+	background: url('/img/big-back.jpg') -200px -90px repeat-x;
+	display:block;
+	color: #f4f5f7;
+}
+
+label
+{
+	color: #f4f5f7;
+}
+
+.lineup
+{
+    display: inline-block;
+}
+
+.lineup label
+{
+    display: inline-block;
+}
+
+.clear-submit
+{
+	margin: 0 0.5em;
+}
+
+.clear-submit input, .clear-submit input:active
+{
+	background: none;
+	border: 0;
+	color: #f4f5f7;
+	width: 100%;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+/*
+*	
+*	main content layout
+*
+*/ 
+
+.container
+{
+	width: 950px;
+	height:100%;
+}
+
+.content
+{
+	background: none;
+	margin: 20px 0 0 0;
+}
+
+div.index, div.form, div.view, div.login
+{
+	background: #adadad;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	float:none;
+}
+
+div.index .actions, div.form .actions, div.view .actions, div.login .actions
+{
+	position:relative;
+}
+
+
+
+/*
+*	
+*	forms
+*
+*/ 
+
+
+
+/*
+*	
+*	header
+*
+*/ 
+
+
+
+.header
+{
+	margin: 50px auto 0;
+	width: 840px;
+}
+
+
+
+
+
+/*
+ * 
+ * 	login
+ * 
+ */
+
+
+div.login
+{
+	width: 280px;
+	background: none;
+}
+
+.login label
+{
+	display: none;
+}
+
+div.login input
+{
+    padding: 10px;
+    margin: 0;
+}
+
+.login .login-submit input
+{
+	width: 200px;
+	
+}
+
+/* 
+*
+*
+*	side actions 
+*
+*
+*/
+
+.actions-toggle
+{
+    background: #ccc;
+    color: #000;
+    width: 40px;
+    padding: 7px 0;
+    position: fixed;
+    text-align: center;
+    border-radius: 0 7px 7px 0;
+    top: 63px;
+    left: 0;
+    opacity: 0.8;
+    
+}
+
+.actions-toggle:hover
+{
+    cursor: pointer;
+}
+
+.open
+{
+    left:200px;
+    top: 63px;
+    display: none;
+}
+
+div.actions-slick
+{
+    display: none;
+    float: none;
+    position: fixed;
+    top:  63px;
+    left:  0px;
+    width:160px;
+    background: #ccc;
+    opacity: 0.8;
+    border-radius: 0 0 7px 0;
+    padding: 10px 20px;
+}
+
+
+
+/* 
+*
+*
+*	side nav 
+*
+*
+*/
+
+.side-nav
+{
+	margin: 100px 0 0 100px;
+	position: absolute;
+}
+
+.side-nav li
+{
+	list-style: none;
+}
+
+.side-nav li span
+{
+	height: 50px;
+	width: 220px;
+
+}
+
+.side-nav .music-tab
+{
+	background: url('/img/menu/music-tab-dark-small.png') 0px 0px no-repeat;
+	float:left;
+}
+
+.side-nav .music-tab:hover
+{
+	background: url('/img/menu/music-tab-glow.png')  0px 0px no-repeat;
+}
+
+.side-nav .projects-tab
+{
+	background: url('/img/menu/projects-tab-dark.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .projects-tab:hover
+{
+	background: url('/img/menu/projects-tab-glow.png')  0px 0px no-repeat;
+}
+
+
+.side-nav .about-tab
+{
+	background: url('/img/menu/about-tab-dark.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .about-tab:hover
+{
+	background: url('/img/menu/about-tab-glow.png')  0px 0px no-repeat;
+}
+
+.side-nav .creations-tab
+{
+	background: url('/img/menu/creations-before.png') 0px 0px no-repeat;
+	float:left;
+
+}
+
+.side-nav .creations-tab:hover
+{
+	background: url('/img/menu/creations-after.png')  0px 0px no-repeat;
+}
+
+.side-back-nav
+{
+	margin: 200px 0 0 00px;
+	float:left;
+
+}
+
+.side-back-nav li
+{
+	list-style: none;
+}
+
+.side-back-nav li span
+{
+	height: 50px;
+	width: 220px;
+
+}
+.side-back-nav .music-tab
+{
+	background: url('/img/menu/music-tab-dark-small.png') 0px -10px no-repeat;
+	float:left;
+}
+
+.side-back-nav .music-tab:hover
+{
+	background: url('/img/menu/music-tab-glow-small.png')  0px -10px no-repeat;
+}
+
+/*
+ * 
+ * 	paging
+ * 
+ */
+
+.paging .disabled
+{
+	display: none;
+}
+
+
+/*
+ * 
+ * 	conversion page
+ * 
+ */
+
+
+
+#ConversionFile
+{
+    opacity:0;
+    margin-top:  0px;
+    width: 110px;
+}
+
+.add-file-wrapper
+{
+    position: relative;
+    display: inline-block;
+}
+
+.add-file
+{
+    display: block;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+}
+
+
+#ConversionOutput
+{
+    margin: 0 0 0 20px;
+    width: 80px;
+}
+
+
+/*
+*
+*
+*	last overrides
+*
+*
+*
+*/
+
+
+
+
+
+} 
+
+
+
+
+
+
+@media (max-width: 1520px)
+{
+	div.side-nav
+	{
+		margin-left: 20px
+	}
+}
+/*****************************************************************************************************************
+*
+*
+*
+*
+*
+* end desktop and tablet view  
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*************************************************************************************************************/
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{ 
+body
+{
+	background: url('/img/small-back.jpg') 00px 0 no-repeat;
+	min-height:1000px;
+}
+
+}
+
+
