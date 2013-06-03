@@ -59,7 +59,7 @@ class ConversionsController extends AppController {
 				$this->redirect($this->request->here);
 			}
 			
-			
+			// where the converted file goes
 			$destination = $dir.'outputs/';
 			
 			if(!is_dir($destination))	mkdir($destination, '755');
@@ -69,9 +69,9 @@ class ConversionsController extends AppController {
 				$this->redirect($this->request->here);
 			}
 
-			// path to move file
+			// path to move file, file to be converted
 			$dir = $dir.'inputs/';
-			$path = $dir.$file['name'];
+			$input_path = $dir.$file['name'];
 
 			if(!is_dir($dir))	mkdir($dir, '777');
 			if(!is_dir($dir))
@@ -82,7 +82,7 @@ class ConversionsController extends AppController {
 		   
 		
 		    //var_dump($path);die();
-			if(move_uploaded_file($file['tmp_name'], $path))
+			if(move_uploaded_file($file['tmp_name'], $input_path))
 			{
 				var_dump($file['name']);
 				var_dump($file);	
@@ -106,12 +106,16 @@ class ConversionsController extends AppController {
 					$newExt = $this->request->data['Conversion']['output'];
 					$newName = substr_replace($file['name'], $newExt, -3);
 					var_dump($destination.$newName);die();	
-					exec('sox '.$path.'  '.$destination.$newName, $output);
+					exec('sox '.$input_path.'  '.$destination.$newName, $output);
 				}
 
 
 
-			}else{die();}
+			}else{
+				//throw error canr move file
+				die();
+				
+			}
 
 				$name =$this->convert();
 				$this->Conversion->create();

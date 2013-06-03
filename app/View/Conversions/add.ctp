@@ -14,8 +14,9 @@
 	<?php
 		echo $this->Form->input('output', array('label' => 'Convert to: ' , 'div' => array( 'class' => 'lineup' )));
 	?>
+	<?php echo $this->Form->end( array( 'label' => 'Convert',  'div' => array('class' => 'btn btn-info lineup login-submit clear-submit'))); ?>
+		<div class="clearfix"></div>
 	</fieldset>
-<?php echo $this->Form->end( array( 'label' => 'Convert',  'div' => array('class' => 'btn btn-info login-submit clear-submit'))); ?>
 </div>
 <div class="actions-toggle">+</div>
 <div class="actions actions-slick">

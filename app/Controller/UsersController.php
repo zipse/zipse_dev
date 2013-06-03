@@ -33,7 +33,7 @@ class UsersController extends AppController {
 	
 	public function confirm()
 	{
-	    // check if they've made directories yet
+	    // check if they've made directories yet w uid
 	    $dir = APP.WEBROOT_DIR.'/files/'. $uid.'/';
 	    
 	    if(!is_dir($dir))	mkdir($dir);
